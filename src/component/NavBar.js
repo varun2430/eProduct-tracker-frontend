@@ -4,9 +4,9 @@ const NavBar = () => {
     <>
       <nav className="navbar navbar-dark bg-dark">
             
-        <div class="container-fluid">
+        <div className="container-fluid">
 
-          <a class="navbar-brand" href="/">eProduct tracker</a>
+          <a className="navbar-brand" href="/">eProduct tracker</a>
 
         </div>
 

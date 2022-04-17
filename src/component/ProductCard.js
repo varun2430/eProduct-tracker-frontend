@@ -4,19 +4,20 @@ const ProductCard = () => {
     <>
         <div className="card" >
 
-            <img src="..." class="card-img-top" alt="..." />
+            <img src="..." className="card-img-top" alt="..." />
 
-            <div class="card-body">
+            <div className="card-body">
 
-                <h5 class="card-title">product name</h5>
-                <p class="card-text">amazom product details</p>
-                <p class="card-text">flipkart product details</p>
-                <p class="card-text">myntra product details</p>
+                <h5 className="card-title">product name</h5>
+                
+                <p className="card-text">amazom product details</p>
+                <p className="card-text">flipkart product details</p>
+                <p className="card-text">myntra product details</p>
 
             </div>
 
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
             </div>
 
         </div>

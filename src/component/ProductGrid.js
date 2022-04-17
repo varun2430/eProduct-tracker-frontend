@@ -1,4 +1,3 @@
-import React from 'react'
 import ProductCard from './ProductCard'
 
 const ProductGrid = () => {
@@ -6,7 +5,7 @@ const ProductGrid = () => {
     <>
         <div className="container-fluid">
 
-            <div class="row row-cols-1 row-cols-md-3 m-4">
+            <div className="row row-cols-1 row-cols-md-3 m-4">
 
                 <div className="col p-3">
                     <ProductCard />
