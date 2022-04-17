@@ -6,7 +6,7 @@ const TrackerProductGrid = () => {
 
         <div className="container-fluid">
 
-            <div className="row row-cols-1 row-cols-md-1 m-4">
+            <div className="row row-cols-1 row-cols-md-1 m-2">
 
                 <div className="col p-3">
                     <TrackerProduct />

@@ -51,7 +51,7 @@ const Search = () => {
 
             <div className="row">
 
-              <div className="col-md-11">
+              <div className="col-md-10">
                 <input  className="form-control mt-4"
                         type="text" 
                         placeholder="Search Product..." 

@@ -1,0 +1,9 @@
+body {
+  background-image: url("C:\dev\web\eproduct-tracker-frontend\public\red_purple.jpg");
+}
+
+.card {
+  background-image: url("C:\dev\web\eproduct-tracker-frontend\public\rainbow.webp") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
