@@ -75,7 +75,8 @@ const TrackerProduct = (props) => {
                     <div className="col-md">
                         <div className="text-end">
                             <button className="btn btn-danger px-2 py-0"
-                                    onClick={() => {delete_product(props.store, props.product_id)}}>X</button>
+                                    onClick={() => {  delete_product(props.store, props.product_id).then( () => {console.log("deleted")} );
+                                                    }}>X</button>
                         </div>
                     </div>
 
@@ -88,16 +89,31 @@ const TrackerProduct = (props) => {
                     </div>
 
                     <div className="col-md">
-                        <h4 className="text-end">{props.price}</h4>
+                        <h4 className="text-end">₹{props.price}</h4>
                     </div>
 
                 </div>
+
 
                 <div className="row">
 
                     <Line options={options} data={data} />
 
                 </div>  
+
+                <div className="row">
+
+                  <div className="text-end">
+                    <a  className="btn btn-primary mb-2 me-2" 
+                        role="button" 
+                        href={props.base_url}
+                        target="_blank"
+                        rel="noreferrer">
+                      Buy Now
+                    </a>
+                  </div>
+
+                </div>
 
             </div>
 

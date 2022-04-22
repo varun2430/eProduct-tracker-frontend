@@ -86,9 +86,7 @@ const Tracker = () => {
 
             <div className="col-md text-center">
               <button className="btn btn-primary mt-4" 
-                      onClick={() => {
-                        const price_list = data[0]["product_price"]
-                        console.log(data[0]) } }>
+                      onClick={() => {track_product()} }>
                 Start Tracking
               </button>
             </div>
@@ -103,6 +101,8 @@ const Tracker = () => {
                 const dt = e.product_price[e.product_price.length-1].dt
                 const price_list = e.product_price.map((item) => {return item.p})
                 const dt_list = e.product_price.map((item) => {return item.dt})
+
+                const js_dt = new Date(dt)
 
                 let img_src = ""
                 let graph_color = "rgb(255, 99, 132)"
@@ -130,7 +130,8 @@ const Tracker = () => {
                                   price={price}
                                   dt={dt}
                                   price_list={price_list}
-                                  dt_list={dt_list} />
+                                  dt_list={dt_list}
+                                  get_data={get_data} />
               )
             })}
 
