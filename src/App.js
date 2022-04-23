@@ -4,7 +4,6 @@ import NavBar from "./component/NavBar";
 import Home from "./page/Home";
 import Search from './page/Search';
 import Tracker from "./page/Tracker";
-import Deals from "./page/Deals";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
             <Route exact path="/" element={ <Home /> } />
             <Route exact path="/search" element={ <Search /> } />
             <Route exact path="/tracker" element={ <Tracker /> } />
-            <Route exact path="/deals" element={ < Deals /> } />
 
           </Routes>
 

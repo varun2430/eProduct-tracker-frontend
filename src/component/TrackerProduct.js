@@ -75,7 +75,8 @@ const TrackerProduct = (props) => {
                     <div className="col-md">
                         <div className="text-end">
                             <button className="btn btn-danger px-2 py-0"
-                                    onClick={() => {  delete_product(props.store, props.product_id).then( () => {console.log("deleted")} );
+                                    onClick={() => {  delete_product(props.store, props.product_id);
+                                                      setTimeout( () => {props.get_data()}, 1000);
                                                     }}>X</button>
                         </div>
                     </div>
